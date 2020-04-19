@@ -1,0 +1,34 @@
+{
+	"manifest_version": 2,
+	"name": "MyImagesTab",
+	"description": "Images New Tab override with google search",
+	"version": "1.7",
+	"chrome_url_overrides": {
+		"newtab": "newtab.html"
+	},
+	"permissions": [
+		"https://kit.fontawesome.com/d364971e6c.js",
+		"<all_urls>",
+		"activeTab",
+		"background"
+	],
+	"background": {
+		"scripts": ["main.js"],
+		"persistent": false
+	},
+	"content_security_policy": "script-src 'self' https://kit.fontawesome.com/d364971e6c.js; object-src 'self'",
+	"page_action": {
+		"default_icon": {
+			"16": "./assets/16icon.png",
+			"32": "./assets/32icon.png",
+			"48": "./assets/48icon.png",
+			"128": "./assets/128icon.png"
+		}
+	},
+	"icons": {
+		"16": "./assets/16icon.png",
+		"32": "./assets/32icon.png",
+		"48": "./assets/48icon.png",
+		"128": "./assets/128icon.png"
+	}
+}

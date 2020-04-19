@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Security-Policy" content="default-src *;" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>SN Extension</title>
+	</head>
+	<body>
+		<main id="main">
+			<div id="question">
+				<form id="question-form">
+					<label class="question-label" for="name">What is your name?</label>
+					<input type="text" id="name" autocomplete="off" />
+					<button type="submit" id="name-btn">Submit</button>
+				</form>
+			</div>
+			<div id="greeting">
+				<h1 class="greeting-title"></h1>
+				<span class="change-name"><i class="far fa-times-circle"></i></span>
+				<h2 class="hour"></h2>
+				<form id="greeting-form">
+					<input
+						type="text"
+						id="search"
+						autocomplete="off"
+						placeholder="Search..."
+					/>
+					<button type="submit" id="search-btn">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>
+			<p class="developed">
+				Developed by
+				<a class="link" href="https://www.suzynakayama.com" target="_blank"
+					>Suzy Nakayama</a
+				>
+			</p>
+		</main>
+		<script
+			src="https://kit.fontawesome.com/d364971e6c.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
